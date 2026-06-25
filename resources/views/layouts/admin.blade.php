@@ -346,7 +346,7 @@
                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
     @csrf
     <button type="submit" class="btn btn-outline-danger float-end">
-        <i class="fas fa-sign-out-alt me-1"></i> sign out6
+        <i class="fas fa-sign-out-alt me-1"></i> sign out
     </button>
 </form>
  

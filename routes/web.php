@@ -28,6 +28,7 @@ Route::middleware(['auth'])->group(function () {
  
     // Proteksi Total Rute CRUD Surat Aplikasi Simpel-K dari Serangan Manipulasi Tembak URL
    # Route::resource('surat', SuratController::class);
+   Route::get('/surat/{id}/cetak', [SuratController::class, 'cetakPdf'])->name('surat.cetak');
    Route::resource('surat', SuratController::class);
 });
  

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Surat extends Model
 {
-    protected $fillable = ['nomor_surat', 'jenis_surat', 'tanggal_ajuan', 'penduduk_id'];
+    protected $fillable = ['nomor_surat', 'jenis_surat', 'tanggal_ajuan','berkas_pendukung', 'penduduk_id'];
     // Relasi: Surat dimiliki oleh Penduduk
     public function penduduk(): BelongsTo
     {
